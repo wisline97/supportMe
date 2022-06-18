@@ -1,0 +1,22 @@
+:root {
+  --active: #ff9900;
+  --main_black: #18191c;
+  --sub_grey1: #a3a3a3;
+  --sub_grey2: #dbdbdb;
+  --sub_greybright: #eeeeee;
+  --borderline: 1px solid var(--sub_greybright);
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  color: var(--main_black);
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: var(--main_black);
+}

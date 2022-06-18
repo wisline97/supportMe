@@ -1,0 +1,247 @@
+/*index 부분 스타일입니다.*/
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif !important;
+  box-sizing: border-box;
+}
+
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  font-weight: 900 !important;
+}
+
+input {
+  outline-style: none;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+img {
+  height: 100%;
+}
+
+.loginimg {
+  overflow: hidden;
+}
+
+.loginpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.loginpage__form {
+  width: 70%;
+}
+
+input {
+  color: var(--sub_grey1);
+  box-sizing: border-box;
+  border: 1px solid var(--sub_grey1);
+  padding: 0 16px;
+  width: 98%;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.loginpage__name:not(:placeholder-shown) {
+  border-color: red;
+}
+
+.loginpage__name:valid {
+  border-color: green;
+}
+
+.loginpage__name {
+  margin-bottom: 8px;
+}
+
+.loginpage__input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.loginpage__btn {
+  font-size: 16px;
+  color: white;
+  background-color: var(--sub_grey1);
+  transition: all 0.5s ease-in-out;
+}
+
+.active_btn {
+  background-color: var(--main_black);
+  cursor: pointer;
+}
+
+/* support-me.html 부분 스타일입니다. */
+
+/* body 배경색상 및 프로그램창 배경색상 지정 스타일 */
+.bodySupportme {
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.programWindow {
+  width: 68%;
+  height: 88%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.01), -8px -8px 10px #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* info 영역 스타일 */
+
+.info {
+  width: 35%;
+  height: 100%;
+  border-right: var(--borderline);
+}
+
+/* 유저 정보 영역 스타일 */
+.info__user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  border-bottom: var(--borderline);
+}
+
+.info__userimg {
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 13px rgba(255, 153, 0, 0.7);
+  margin-right: 16px;
+}
+
+button {
+  position: absolute;
+  left: 83%;
+  margin-top: 2px;
+  background-color: white;
+}
+
+button:hover .subtxt {
+  color: var(--active);
+  cursor: pointer;
+}
+
+.subtxt {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: var(--sub_grey1);
+  transition: color 0.5s ease-in-out;
+}
+
+/* 유저 정보 영역 스타일 끝*/
+
+/* 명언 영역 스타일*/
+.info__quotes {
+  padding: 30px;
+  border-bottom: var(--borderline);
+  line-height: 19px;
+  letter-spacing: -0.02em;
+}
+
+.quotes,
+.author {
+  margin-top: 16px;
+  color: var(--sub_grey1);
+}
+
+/* 시계 영역 스타일*/
+.info__clock {
+  padding: 30px;
+  border-bottom: var(--borderline);
+}
+
+/* 날씨 영역 스타일*/
+.info__weather {
+  padding: 30px;
+  border-bottom: var(--borderline);
+}
+
+/* 로고 영역 스타일*/
+.info__logo {
+  padding: 30px;
+  border-bottom: var(--borderline);
+}
+
+/* info 영역 스타일 끝 */
+
+/* todo 영역 스타일 */
+
+.todo {
+  width: 65%;
+}
+
+.todo__title {
+  border-bottom: var(--borderline);
+  padding: 41px 30px;
+  margin-bottom: 24px;
+}
+
+.todo__list {
+  padding: 0 30px;
+}
+
+/* todo input 스타일 지정 */
+.todo__userinput {
+  width: 100%;
+  font-size: 18px;
+  padding: 0;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 2px solid var(--sub_grey2);
+  margin-bottom: 24px;
+  transition: border-bottom 0.5s ease-in-out;
+}
+
+.todo__userinput::placeholder {
+  color: var(--sub_grey2);
+}
+
+.todo__userinput:focus {
+  border-bottom: 2px solid var(--active);
+}
+/* todo input 스타일 지정 끝*/
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  color: var(--active);
+}
+
+.icon {
+  color: var(--sub_grey2);
+}
