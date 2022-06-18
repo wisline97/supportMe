@@ -35,7 +35,9 @@ addEventListener("submit", onloginBtnSubmit);
 //유저이름 반영 기능//
 const user = localStorage.getItem(USERNAME_KEY);
 document.querySelector(".info__username> h2").innerText = `반가워요 ${user}님!`;
-document.querySelector(".todo__title> h1").innerText = `${user}님!`;
+document.querySelector(
+  ".todo__title> h1"
+).innerText = `${user}님의 오늘 할 일 목록`;
 //유저이름 반영 기능 끝//
 
 //명언기능//
