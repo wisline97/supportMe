@@ -22,6 +22,7 @@
             placeholder="이름을 입력해주세요."
             minlength="2"
             maxlength="8"
+            onkeypress="if(event.keyCode=='13'){event.preventDefault(); searchEvt();}"
           />
           <input disabled type="submit" value="로그인" class="loginpage__btn" />
         </form>

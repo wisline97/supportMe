@@ -1,13 +1,11 @@
 //로그인 관련 기능//
-
-const username = document.querySelector(".loginpage__name");
 const loginInput = document.querySelector(".loginpage__name");
+const username = document.querySelector(".loginpage__name");
 const loginBtn = document.querySelector(".loginpage__btn");
 const logoutBtn = document.querySelector(".logout__btn");
 
 //유저가 인풋값을 정확하게 입력하면 로그인 버튼활성화//
 function onloginBtnChange() {
-  const username = loginInput.value;
   if (
     username === "" ||
     getComputedStyle(loginInput).borderBlockColor === "rgb(255, 0, 0)"
@@ -19,15 +17,14 @@ function onloginBtnChange() {
   }
 }
 
+addEventListener("input", onloginBtnChange);
+
 //로그인 버튼 누르면 유저네임 데이터 저장하는 함수//
 const USERNAME_KEY = "username";
 function onloginBtnSubmit() {
   localStorage.setItem(USERNAME_KEY, loginInput.value);
 }
 
-//유저가 인풋값을 입력하면 로그인 버튼활성화//
-addEventListener("input", onloginBtnChange);
-//유저가 로그인 버튼을 클릭하면 유저네임을 데이터베이스에 저장//
 addEventListener("submit", onloginBtnSubmit);
 
 //로그인 관련 기능 끝//
@@ -115,8 +112,6 @@ function getClock() {
 
   time.innerText = `${hours}:${minutes}:${seconds}`;
   date.innerText = `${year}년 ${month + 1}월 ${todaydate}일 ${weekday}요일`;
-  console.log(todaydate);
-  console.log(realtime);
 }
 
 getClock();

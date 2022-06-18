@@ -26,7 +26,9 @@
           <div class="info__username">
             <h2></h2>
           </div>
-          <button class="logout__btn"><p class="subtxt">Logout</p></button>
+          <button onclick=" location.href='index.html'" class="logout__btn">
+            <p class="subtxt">Logout</p>
+          </button>
         </div>
 
         <div class="info__quotes">
@@ -52,11 +54,18 @@
         <div class="todo__title">
           <h1></h1>
         </div>
-        <div class="todo__list">
-          <input class="todo__userinput" type="text" placeholder="" />
-        </div>
+        <form class="todo__form">
+          <input
+            required
+            class="todo__userinput"
+            type="text"
+            placeholder="할 일을 입력하신 후 Enter키를 입력해주세요."
+          />
+        </form>
+        <ul class="todo__list"></ul>
       </div>
     </div>
     <script src="app.js"></script>
+    <script src="todo.js"></script>
   </body>
 </html>
