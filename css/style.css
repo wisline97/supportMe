@@ -161,13 +161,14 @@ button:hover .subtxt {
 
 /* 명언 영역 스타일*/
 .info__quotes {
+  height: 180px;
   padding: 30px;
   border-bottom: var(--borderline);
   line-height: 19px;
   letter-spacing: -0.02em;
 }
 
-.quotes,
+.quote,
 .author {
   margin-top: 16px;
   color: var(--sub_grey1);
@@ -179,16 +180,60 @@ button:hover .subtxt {
   border-bottom: var(--borderline);
 }
 
+.time {
+  margin-top: 16px;
+  font-size: 59.7273px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--main_black);
+}
+
+.date {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--sub_grey1);
+}
+
 /* 날씨 영역 스타일*/
 .info__weather {
   padding: 30px;
   border-bottom: var(--borderline);
 }
 
+.info__weather > p {
+  text-align: center;
+}
+
+.temperature {
+  font-weight: 700;
+  margin-top: 16px;
+  font-size: 59.7273px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--main_black);
+}
+
+.conditions {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--sub_grey1);
+}
+
 /* 로고 영역 스타일*/
 .info__logo {
+  display: flex;
+  align-items: center;
   padding: 30px;
-  border-bottom: var(--borderline);
+}
+
+.info__logo > h2 {
+  margin-top: 12px;
 }
 
 /* info 영역 스타일 끝 */

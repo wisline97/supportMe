@@ -13,7 +13,7 @@
     <div class="loginpage">
       <div class="loginpage__form">
         <h1>당신의 일상을 돕는<br />Support.me</h1>
-        <form class="loginpage__input">
+        <form class="loginpage__input" action="support-me.html" method="post">
           <input
             required
             pattern=".*\S.*"
@@ -21,14 +21,9 @@
             type="text"
             placeholder="이름을 입력해주세요."
             minlength="2"
+            maxlength="8"
           />
-          <input
-            disabled
-            type="button"
-            value="로그인"
-            class="loginpage__btn"
-            onClick="location.href='support-me.html'"
-          />
+          <input disabled type="submit" value="로그인" class="loginpage__btn" />
         </form>
       </div>
     </div>
@@ -36,7 +31,7 @@
       <img
         src="https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80"
       />
-      <script src="app.js"></script>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
