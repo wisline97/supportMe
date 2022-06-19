@@ -31,11 +31,15 @@ body {
 }
 
 img {
+  width: 100%;
   height: 100%;
 }
 
 .loginimg {
+  width: 70%;
+  height: 100vh;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .loginpage {
@@ -204,16 +208,16 @@ button {
 /* 날씨 영역 스타일*/
 .info__weather {
   padding: 30px;
-  border-bottom: var(--borderline);
 }
 
 .info__weather > p {
   text-align: center;
 }
-
+.city {
+  margin-top: 16px;
+}
 .temperature {
   font-weight: 700;
-  margin-top: 16px;
   font-size: 59.7273px;
   line-height: 72px;
   text-align: center;
@@ -234,10 +238,6 @@ button {
   display: flex;
   align-items: center;
   padding: 30px;
-}
-
-.info__logo > h2 {
-  margin-top: 12px;
 }
 
 /* info 영역 스타일 끝 */
